@@ -8,7 +8,13 @@ type GameCardProps = {
 
 export function GameCard({ adsCount, imgSrc, name }: GameCardProps) {
   return (
-    <Link minW="240px">
+    <Link
+      minW="240px"
+      transition="all 0.2s ease"
+      _active={{
+        opacity: 0.5,
+      }}
+    >
       <Box position="relative" overflow="hidden" borderRadius="lg">
         <Image src={imgSrc} alt={name} w="100%" />
 
