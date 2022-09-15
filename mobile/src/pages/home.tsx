@@ -11,8 +11,8 @@ export function HomePage() {
         <Image src={logoImg} alt="Logotipo" w={214} />
       </Flex>
 
-      <Box as="main" pl="8">
-        <Box mb="5">
+      <Box as="main">
+        <Box mb="5" pl="8">
           <Heading fontWeight="black" fontSize="2xl">
             Encontre seu duo!
           </Heading>
@@ -21,7 +21,7 @@ export function HomePage() {
           </Text>
         </Box>
 
-        <Flex gap="6" overflowX="auto" pr="8">
+        <Flex gap="6" overflowX="auto" pl="8" pr="16">
           {GAMES.map((game) => (
             <GameCard
               key={game.id}
