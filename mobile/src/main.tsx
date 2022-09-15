@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
 import { App } from './App'
+import bgGalaxy from './assets/background-galaxy.png'
 
 const colors = {
   background: {
@@ -34,7 +35,19 @@ const styles = {
   global: {
     body: {
       bg: 'background.900',
+      backgroundImage: bgGalaxy,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed',
+      backgroundRepeat: 'no-repeat',
       color: 'design.text',
+      h: '100vh',
+      overflow: 'hidden',
+    },
+    a: {
+      _hover: {
+        textDecoration: 'none',
+      },
     },
   },
 }
