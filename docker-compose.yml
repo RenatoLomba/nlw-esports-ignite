@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    container_name: esports-db
+    environment:
+      POSTGRES_DB: esports
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker@root
