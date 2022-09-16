@@ -4,7 +4,9 @@ services:
   db:
     image: postgres
     container_name: esports-db
+    ports:
+      - 5432:5432
     environment:
       POSTGRES_DB: esports
       POSTGRES_USER: docker
-      POSTGRES_PASSWORD: docker@root
+      POSTGRES_PASSWORD: docker_root
