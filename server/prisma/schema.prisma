@@ -30,4 +30,7 @@ model Ad {
 
   gameId String
   game   Game   @relation(references: [id], fields: [gameId])
+
+  @@unique([discord, gameId])
+  @@index([gameId])
 }
